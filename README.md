@@ -1,7 +1,7 @@
 # Prediction-of-cerebral-aneurysm-and-location
 
 ## 0. Goal
-익명화된 뇌혈관조영술 영상을 기반으로 **뇌동맥류 여부, 위치를 진단**하는 소프트웨어 개발  
+익명화된 뇌혈관조영술 영상을 기반으로 **뇌동맥류 여부, 위치를 진단**하는 소프트웨어 개발한다.  
 
 ## 1. Detect Aneurysm’s existence
 
