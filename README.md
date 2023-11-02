@@ -3,6 +3,7 @@
 ## 0. Goal
 익명화된 뇌혈관조영술 영상을 기반으로 **뇌동맥류 여부, 위치를 진단**하는 소프트웨어 개발 
 
+
 ## 1. Detect Aneurysm’s existence
 
 ### a. Task type: Regression
@@ -21,6 +22,7 @@ pre-trained ResNet50 model을 이용해 8개의 multi-inputs에 따라, feature 
 
 https://lh4.googleusercontent.com/4pi-eFhQzYKTahcui7BmfkQ72HKbaAcqFjsqXRhzlCDvq6y-Fswd7tIJTgaJTHPUmDJ94g1p8pE1jKR_GmrHodCUzYm9n-QQ7kp7GOF0h6NamUdLoEacf8rbf_L4xrMn8eh0K56cQ0E-m0YHRAm_hkw
 
+
 ## 2. Classify Aneurysm’s locations
 
 ### a. Task type: Multi-Label classification
@@ -38,6 +40,7 @@ pre-trained ResNet50 model을 이용해 pre-processed image input에서 feature 
 https://lh4.googleusercontent.com/9vUYdj85EcfwaAX8EGm8MEHkGLHleNjQtRZVpb3PVDcbl9FKUfFWvHv-WB1XitV2nyLtBKtgYkXCQ_Vu3J75ugmEbJ1Ys5xzciP2ETonT24PVs_E1y8KSYxTV7HztUz58ne88tbvoV7acKBc1vaY2ns
 
 convNext_tiny pretrained model을 사용했을 때는 training accuracy와 validation accuracy가 미세하게 낮았고, convNext_tiny 이상의 확장된 model을 사용할 경우 과적합 양상을 보여, 최종 model은 resnet50을 선택하게 되었다. 이후, learning rate 조정을 통해 가장 accuracy가 빠르게 최대 값으로 도달하는 것을 선정하였다.
+
 
 ## 3. C-statistics
 
