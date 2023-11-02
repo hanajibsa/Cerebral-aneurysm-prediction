@@ -1,4 +1,4 @@
-# Prediction-of-cerebral-aneurysm
+# Cerebral-aneurysm-prediction
 
 ### 1. 대회 내용
 
