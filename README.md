@@ -9,53 +9,9 @@
 - **train_csv**: 뇌동맥류 여부, 뇌동맥류 위치에 대한 정보
     1. 뇌동맥류 여부 (1=TRUE 0=FALSE) - Aneurysm 
     2. 뇌동맥류 위치 정보 (1=Presence 0=Absence)
-        - 위치
-            
-            L_ICA = left internal carotid artery (왼쪽 내경동맥)
-            R_ICA = right internal carotid artery (오른쪽 내경동맥)
-            L_PCOM = left posterior communicating artery
-            R_PCOM = right posterior communicating artery
-            L_AntChor = left anterior choroidal artery
-            R_AntChor = right anterior choroidal artery
-            L_ACA = left anterior cerebral artery
-            R_ACA = right anterior cerebral artery
-            L_ACOM = left-sided anterior communicating artery
-            R_ACOM = right-sided anterior communicating artery
-            L_MCA = left middle cerebral artery
-            R_MCA = right middle cerebral artery
-            L_VA = left vertebral artery (왼쪽 추경동맥)
-            R_VA = right vertebral artery (오른쪽 추경동맥)
-            L_PICA = left posterior inferior cerebellar artery
-            R_PICA = right posterior inferior cerebellar artery
-            L_SCA = left superior cerebellar artery
-            R_SCA = right superior cerebellar artery
-            BA = basilar artery
-            L_PCA = left posterior cerebral artery
-            R_PCA = right posterior cerebral artery
-            
-            ** 뇌동맥류가 특정 위치에 2 개 이상 있더라도 위치 정보에는 1 로 표기되어 있음
+    
             
 - **train_set**: 각각 영상 2장(앞뒤/측면 촬영)씩 각 환자의 검사 당 총 8개의 영상이 제시됨
-    - 영상
-        1. LI-A.jpg / LI-B.jpg
-            
-            Angiography with left internal carotid artery injection
-            
-            왼쪽 내경동맥에서 조영제를 주입하고 얻은 영상의 A 와 B (서로 다른 각도 촬영)
-            
-        2. RI-A.jpg / RI-B.jpg
-            
-            오른쪽 내경동맥에서 조영제를 주입하고 얻은 영상의 A 와 B
-            
-        3. LV-A.jpg / LV-B.jpg
-            
-            Angiography with left vertebral artery injection
-            
-            왼쪽 추골동맥에서 조영제를 주입하고 얻은 영상의 A 와 B
-            
-        4. RV-A.jpg / RV-B.jpg
-            
-            오른쪽 추골동맥에서 조영제를 주입하고 얻은 영상의 A 와 B
             
 
 ### 3. 평가 방법
