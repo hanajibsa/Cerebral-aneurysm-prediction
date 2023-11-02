@@ -20,8 +20,8 @@ pre-trained ResNet50 model을 이용해 8개의 multi-inputs에 따라, feature 
 
 하이퍼 파라미터 튜닝을 위해 초기에 optimizer는 Adam과 NAdam을, 손실 함수는 CrossEntropy를 사용했었지만 train accuracy와 validation accuracy이 50%대로 낮았고 SGD와 BCE 손실 함수를 사용했을 때 정확도가 70%대로 눈에 띄게 향상했다. 또 learning rate를 0.0001로 작게 설정했을 때는 정확도가 낮아, 이를 증가시키기 위한 시도 끝에 learning rate=0.0015, momentum = 0.9, weight decay = 5e-4로 설정했으며 학습을 안정화시키기 위해 epoch을 150으로 증가시켰다. 이에 따라 최종적으로 train accuracy: 99.55%, validation accuracy: 99.56%를 얻었다.
 
-https://lh4.googleusercontent.com/4pi-eFhQzYKTahcui7BmfkQ72HKbaAcqFjsqXRhzlCDvq6y-Fswd7tIJTgaJTHPUmDJ94g1p8pE1jKR_GmrHodCUzYm9n-QQ7kp7GOF0h6NamUdLoEacf8rbf_L4xrMn8eh0K56cQ0E-m0YHRAm_hkw  
-
+![image 0](https://github.com/hanajibsa/Prediction-of-cerebral-aneurysm-and-location/assets/115071643/2f7ad2fb-922a-4235-8348-c3624223581b)
+<br/>
 
 ## 2. Classify Aneurysm’s locations
 
@@ -40,7 +40,7 @@ pre-trained ResNet50 model을 이용해 pre-processed image input에서 feature 
 https://lh4.googleusercontent.com/9vUYdj85EcfwaAX8EGm8MEHkGLHleNjQtRZVpb3PVDcbl9FKUfFWvHv-WB1XitV2nyLtBKtgYkXCQ_Vu3J75ugmEbJ1Ys5xzciP2ETonT24PVs_E1y8KSYxTV7HztUz58ne88tbvoV7acKBc1vaY2ns
 
 convNext_tiny pretrained model을 사용했을 때는 training accuracy와 validation accuracy가 미세하게 낮았고, convNext_tiny 이상의 확장된 model을 사용할 경우 과적합 양상을 보여, 최종 model은 resnet50을 선택하게 되었다. 이후, learning rate 조정을 통해 가장 accuracy가 빠르게 최대 값으로 도달하는 것을 선정하였다.  
-
+<br/>
 
 ## 3. C-statistics
 
