@@ -37,7 +37,7 @@ train_set에는 한 환자의 index 당 8개의 촬영 위치 별 images가 있�
 
 pre-trained ResNet50 model을 이용해 pre-processed image input에서 feature extraction을 수행한 뒤 output을 Flatten하여 FC layer와 sigmoid 함수를 통해 21개의 label에 대한 multi-label classification 결과를 출력하도록 구성했다. optimizer SGD와 learning rate = 0.001를 사용하여 최종 training accuracy: 90.9%, validation accuracy: 91.3%를 얻었다.
 
-https://lh4.googleusercontent.com/9vUYdj85EcfwaAX8EGm8MEHkGLHleNjQtRZVpb3PVDcbl9FKUfFWvHv-WB1XitV2nyLtBKtgYkXCQ_Vu3J75ugmEbJ1Ys5xzciP2ETonT24PVs_E1y8KSYxTV7HztUz58ne88tbvoV7acKBc1vaY2ns
+![image 1](https://github.com/hanajibsa/Prediction-of-cerebral-aneurysm-and-location/assets/115071643/869c2d9c-4d79-4210-932c-e4aeed77f454)
 
 convNext_tiny pretrained model을 사용했을 때는 training accuracy와 validation accuracy가 미세하게 낮았고, convNext_tiny 이상의 확장된 model을 사용할 경우 과적합 양상을 보여, 최종 model은 resnet50을 선택하게 되었다. 이후, learning rate 조정을 통해 가장 accuracy가 빠르게 최대 값으로 도달하는 것을 선정하였다.  
 <br/>
@@ -46,7 +46,7 @@ convNext_tiny pretrained model을 사용했을 때는 training accuracy와 valid
 
 Aneurysm existence: Regression / Aneurysm locations: Multi-Label Classification
 
-https://lh3.googleusercontent.com/HsLEPW2EIwnTjiE8oiqLe-uAoCB-51UXiA-FS98bI1FuIFqq4RPhpwKtXSZk3KV8Pr_y1yyfy4gc7Y6auHGOENEfQ7k_sZTmbc4P0w-OvvXZ0G7VAROqTY95M3vQGF8yMTuV5jYgo96VkcVvFxBZRIg
+![image 2](https://github.com/hanajibsa/Prediction-of-cerebral-aneurysm-and-location/assets/115071643/f9ba6021-1abc-41d1-834f-e90633112c5a)
 
 - AUROC of the provided model 0.995197725805022
 - Accuracy for locations 0.9711412515316685
