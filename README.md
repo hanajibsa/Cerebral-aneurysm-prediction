@@ -1,4 +1,4 @@
-# Prediction-of-cerebral-aneurysm-and-location
+# Diagnosis the presence and location of cerebral aneurysms
 
 ## 0. Goal
 익명화된 뇌혈관조영술 영상을 기반으로 **뇌동맥류 여부, 위치를 진단**하는 소프트웨어 개발한다.  
